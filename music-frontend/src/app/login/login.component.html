@@ -7,7 +7,8 @@
     
     <mat-form-field>
     <input matInput formControlName="email" [(ngModel)]="register.email" placeholder="Email" type="email" name="email" id="email">
-    </mat-form-field>
+    <small *ngIf="email.invalid && (email.dirty || email.touched)">
+</mat-form-field>
     <mat-form-field>
     <input matInput formControlName="password" placeholder="Password" [(ngModel)]="register.password" type="password" name="password"
     id="password">
