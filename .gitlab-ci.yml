@@ -1,0 +1,30 @@
+image: 'maven:3-jdk-8'
+stages:
+  - build
+  - test
+services:
+  - 'mysql:5.5'
+  - 'mongo:latest'
+variables:
+  MYSQL_DATABASE: "data"
+  MYSQL_URL: "jdbc:mysql://localhost:3306/data"
+  MYSQL_USER: "root"
+  MYSQL_PASSWORD: "Password@123"
+  MYSQL_ROOT_PASSWORD: "Root@123"
+  FAV_MONGO_DB_NAME: "nht"
+  FAV_MONGO_DB_URL: "mongodb://localhost:27017/nht"
+  MR_MONGO_DB_NAME: "nht"
+  MR_MONGO_DB_URL: "mongodb://localhost:27017/nht"
+cache:
+  paths:
+    - .m2/repository
+    - target
+maven-test:
+  stage: test
+  script: "mvn test"
+maven-build:
+  stage: build
+  script: "mvn package"
+  artifacts:
+    paths:
+      - target/*.jar
