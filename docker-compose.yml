@@ -41,8 +41,8 @@ services :
         ports:
             - "3306:3306"
         environment:
-            MYSQL_DATABASE: musix
-            MYSQL_ROOT_PASSWORD: Hello@12
+            MYSQL_DATABASE: nht
+            MYSQL_ROOT_PASSWORD: Root@123
              # MYSQL_USERNAME: root
              # MYSQL_PASSWORD: Root@123
     mongo:
