@@ -1,8 +1,10 @@
 import { Injectable } from '@angular/core';
 import { Observable, BehaviorSubject } from 'rxjs';
-import { Recommend } from 'Recommend';
+
 import { HttpHeaders, HttpClient } from '@angular/common/http';
-import { Favourite } from 'favourite';
+import { Recommend } from '../Recommend';
+import { Favourite } from '../Favourite';
+
 
 @Injectable({
   providedIn: 'root'

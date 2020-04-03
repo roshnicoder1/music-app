@@ -1,11 +1,13 @@
 import { Component, OnInit, Input } from '@angular/core';
 import { RecommendService } from '../service/recommend.service';
-import { Register } from 'register';
-import { Recommend } from 'Recommend';
+
 import { FavouriteService } from '../service/favourite.service';
-import { Favourite } from 'favourite';
+
 import { MusicService } from '../service/music.service';
 import { RoutingService } from '../service/routing.service';
+import { Register } from '../register';
+import { Favourite } from '../Favourite';
+import { Recommend } from '../Recommend';
 
 @Component({
   selector: 'app-music-card',

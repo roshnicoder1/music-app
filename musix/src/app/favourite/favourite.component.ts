@@ -1,8 +1,9 @@
 import { Component, OnInit } from '@angular/core';
 import { RecommendService } from '../service/recommend.service';
-import { Recommend } from 'Recommend';
+
 import { FavouriteService } from '../service/favourite.service';
-import { Favourite } from 'favourite';
+import { Favourite } from '../Favourite';
+
 
 @Component({
   selector: 'app-favourite',

@@ -1,11 +1,12 @@
 import { Component, OnInit, Input, SystemJsNgModuleLoader } from '@angular/core';
-import { Register } from 'register';
-import { Favourite } from 'favourite';
-import { Recommend } from 'Recommend';
+
 import { RecommendService } from '../service/recommend.service';
 import { FavouriteService } from '../service/favourite.service';
 import { error } from '@angular/compiler/src/util';
 import { RoutingService } from '../service/routing.service';
+import { Register } from '../register';
+import { Recommend } from '../Recommend';
+import { Favourite } from '../Favourite';
 
 @Component({
   selector: 'app-unfavrec',

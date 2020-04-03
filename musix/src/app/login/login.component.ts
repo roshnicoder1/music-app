@@ -1,12 +1,13 @@
 import { Component, OnInit ,Inject, ɵConsole} from '@angular/core';
 import {FormControl, Validators, AbstractControl, FormGroup } from '@angular/forms';
-import { Register } from 'register';
+
 import { RegisterService } from '../service/register.service';
 import { RoutingService } from '../service/routing.service';
 import {AuthenticationService} from '../service/authentication.service';
 // import { validateConfig } from '@angular/router/src/config';
 import {MatDialog, MatDialogRef, MAT_DIALOG_DATA} from '@angular/material/dialog';
 import { RecommendService } from '../service/recommend.service';
+import { Register } from '../register';
 
 
 @Component({

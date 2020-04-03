@@ -1,7 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { MusicService } from '../service/music.service';
 import { RecommendService } from '../service/recommend.service';
-import { Recommend } from 'Recommend';
+
 import { BehaviorSubject } from 'rxjs';
 
 @Component({

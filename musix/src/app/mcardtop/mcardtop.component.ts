@@ -1,10 +1,11 @@
 import { Component, OnInit, Input } from '@angular/core';
-import { Register } from 'register';
-import { Recommend } from 'Recommend';
-import { Favourite } from 'favourite';
+
 import { RecommendService } from '../service/recommend.service';
 import { FavouriteService } from '../service/favourite.service';
 import { RoutingService } from '../service/routing.service';
+import { Register } from '../register';
+import { Favourite } from '../Favourite';
+import { Recommend } from '../Recommend';
 
 @Component({
   selector: 'app-mcardtop',

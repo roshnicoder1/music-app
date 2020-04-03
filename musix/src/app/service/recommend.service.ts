@@ -1,9 +1,9 @@
 import { Injectable } from '@angular/core';
 import { HttpClient, HttpHeaders } from '@angular/common/http';
 import { Observable, Subject, BehaviorSubject } from 'rxjs';
-import { Register } from 'register';
-import { Recommend } from 'Recommend';
-import { Favourite } from 'favourite';
+import { Recommend } from '../Recommend';
+import { Favourite } from '../Favourite';
+
 
 
 @Injectable({
