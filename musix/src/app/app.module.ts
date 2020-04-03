@@ -16,13 +16,13 @@ import {HttpClientModule} from '@angular/common/http';
 
 import {MatInputModule} from '@angular/material/input';
 import { FooterComponent } from './footer/footer.component';
-import {MatPaginatorModule} from '@angular/material';
+import {MatPaginatorModule} from '@angular/material/paginator';
 import {FormsModule, ReactiveFormsModule} from '@angular/forms';
 import { RegisterComponent } from './register/register.component';
 import {MatIconModule} from '@angular/material/icon';
 import {MatRadioModule} from '@angular/material/radio';
 import {MatDatepickerModule} from '@angular/material/datepicker';
-import {MatNativeDateModule} from '@angular/material';
+// import {MatNativeDateModule} from '@angular/material';
 import { LoginComponent } from './login/login.component';
 import { MusicService } from './service/music.service';
 import { AuthenticationService } from './service/authentication.service';
@@ -52,6 +52,7 @@ import { AlbumDetailComponent } from './album-detail/album-detail.component';
 import { UnfavrecComponent } from './unfavrec/unfavrec.component';
 import { AllrecommendedComponent } from './allrecommended/allrecommended.component';
 import { NgxAudioPlayerModule } from 'ngx-audio-player';
+import { MatNativeDateModule } from '@angular/material/core';
 
 //Adding to the library
 library.add(faFilm,faFish);
